@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+
+import TodoList from './components/TodoList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='h-screen bg-gradient-to-r from-[#353632] to-[#222420] p-10'>
+      <h1 className="text-center font-bold text-[#e0ded7] md:text-7xl text-4xl">What are you up to Today?</h1>
+      <div className="flex justify-center mt-10">
+        <TodoList/>
+      </div> 
     </div>
   );
 }
